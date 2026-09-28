@@ -1,0 +1,68 @@
+Question 1
+
+
+String[] cities = {"Cape Town", "Port Elizabeth", "Pretoria"}; [span_2](start_span)[span_2](end_span) 
+String[] consoles = {"PS5", "XBOX", "SWITCH"}; [span_2](start_span)[span_3](end_span)
+int[][] sales = {
+	{1000, 2000, 3000},
+	{2000, 3000, 4000},
+	{1500, 1100, 1200}
+};
+
+System.out.println("GAMIING CONSOLE REPORT")[span_9](start_span)[span_9](end_span)
+System.out.println("--------------------------------------------------");
+
+System.out.print("\t\t");
+for (int i = 0; i < consoles.length; i++) {
+    System.out.print(consoles[i] + "\t");
+}
+System.out.println();
+
+for (int i = 0; i < cities.length; i++) {
+    System.out.print(cities[i]);
+
+  if (citites[i].length() <12) {
+     Systen.out.print"\t\t");
+  }else{
+     System.out.print("\t");
+  }
+
+  for (int j =0; j < sales[i].length; j++) {
+      System.out.print(sales[i][j] + "\t");
+  }
+  System.out.print();
+}
+
+System.out.println("-----------------------------------------------------------");
+System.out.println("CONSOLES SALES TOTALS FOR EACH CITY")[span_12](start_span)[span_12](end_span)
+System.out.println("-----------------------------------------------------------");
+
+int maxSales = 0;
+String topCity = "";
+
+for (int i = 0; i < cities.length; i++) {
+     int totalCitySales = 0;
+
+     for (int j = 0; j < sales[i].length; j++) {
+         totalCitySales = totalCitySales + sales[i][j];
+     }
+
+     System.out.print(cities[i]);
+     if (cities[i].length() < 12) {
+        System.out.print("\t\t");
+     }else{
+        System.out.print("\t");
+     }
+     System.out.print(totalCitySales);
+
+     if (totalCitysales > maxSales) {
+        maxSales = totalCitySales;
+        topCity = cities[i];
+     }
+  }
+
+  System.out.println("-----------------------------------------------------------------------");
+  System.out.println("CITY WITH THE MOST SALES: " + topCity);[span_18](start_span)[span_18](end_span)
+  System.out.println("-----------------------------------------------------------------------");
+  }
+}
